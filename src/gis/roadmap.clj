@@ -70,18 +70,25 @@
 ;;
 ;; [HDF in clojure](https://scicloj.github.io/clojure-data-scrapbook/projects/data-formats/hdf/index.html)
 ;; #### Zarr
+;; Chunked, compressed multidimensional arrays designed for distributed processing.
+;; At present Zarr is more modern and preferable to netCDF and HDF.
 ;; ##### TODO:
-;; - how to read in Clojure
+;; - Java example with [jzarr](https://github.com/zarr-developers/jzarr)
+;; - python example with [zarr-python](https://zarr.readthedocs.io/en/stable/)
 ;; 
 ;; ### Vector
+;; Discuss how [Factual/geo](https://github.com/Factual/geo) can be used to handle various
+;; vector formats
 ;; #### GeoJSON
-;; - json->edn
-;; - spec validation for geoJSON
-;; - review [FarmLogs/geojson](https://github.com/FarmLogs/geojson)
+;; GeoJSON is a standard specification of JSON objects for geographic vector data.
+;; For simple tasks we can handle them with Clojure's standard JSON tools
+;; (cheshire, jsonista, clojure.data.json etc).
 ;; #### Shapefile
-;; - [ovid](https://github.com/willcohen/ovid)
-;; #### Notes:
-;; Maybe [Factual/geo](https://github.com/Factual/geo) is good for some of this?
+;; - Factual/geo
+;; #### TODOs:
+;; - Fill out Factual/geo examples
+;; - review [FarmLogs/geojson](https://github.com/FarmLogs/geojson)
+;; - review [ovid](https://github.com/willcohen/ovid)
 ;;
 ;; ## Cloud Optimized
 ;; ### PMTiles
@@ -96,8 +103,8 @@
              :style {:width "30em"}})
 ;; *Image from https:/guide.cloudnativegeo.org* 
 ;;
-;; ## Image processing
-;; Routing / Network analysis
+;; ## Image / signal processing
+;; ## Routing / Network analysis
 ;; ### Some articles to review
 ;; - [GTFS](https://en.wikipedia.org/wiki/GTFS)
 ;; - [MATSim](https://github.com/matsim-org)
